@@ -1,0 +1,401 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+a{
+    text-decoration: none;
+    color: #473E37;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #473E37;
+    overflow-x: hidden; /*убирает скрол внизу*/
+}
+
+.header{
+    padding-top: 24px;
+    background: #FFFDF5;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+.authentication{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.user img{
+    margin-right: 10px;
+}
+
+/* .line{
+    width: 100%;
+    margin-bottom: 86px;
+    border: 1px solid rgba(180, 180, 180, 0.35);
+    position: absolute;
+} */
+
+.box-search-box{
+    display: none;
+}
+
+.search-box{
+    height: 39.4px;
+    border-radius: 25px;
+    background: #A6A19D;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.search{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255, 253, 245, 0.48);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 39.4px;
+    width: 203px;
+}
+
+.search::placeholder{
+    color: rgba(255, 253, 245, 0.48);
+}
+
+.search-icn{
+    width: 20px;
+    height: 20px;
+    padding-right: 6px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.nav-button{
+    display: none;
+}
+
+.list{
+    width: 90px;
+}
+
+.s_h_b{
+    display: flex;
+    gap: 14px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 685px;
+    background: rgba(91, 91, 91, 0.53);
+}
+
+.main_offer{
+    background: url(../img/picture/main_offer_photo.png) no-repeat center top / cover;
+}
+
+.offer {
+    color: #FFFDF5;
+    padding-top: 235px;
+    padding-bottom: 87px;
+    padding-left: 88px;
+}
+
+.offer h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 112%;
+    letter-spacing: 0.055em;
+}
+
+.text_offer {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 112%;
+    letter-spacing: 0.055em;
+}
+
+.shell{
+    display: flex;
+    gap: 69px;
+    padding-bottom: 184px;
+}
+
+/* .popularity {
+    padding-left: 88px; 
+}  */
+
+.popul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 230px;
+    height: 50px;
+    border: 2px solid rgba(229, 227, 222, 0.72);
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    color: #D1CDC8;
+}
+
+.disc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 230px;
+    height: 50px;
+    border: 2px solid rgba(229, 227, 222, 0.72);
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    color: #D1CDC8;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background:#FFFDF5;;
+}
+
+section .container{
+    justify-content: center;
+}
+
+.flexCard h3{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 112%;
+    padding-bottom: 50px;
+}
+
+.card-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 333px;
+    background: rgba(168, 161, 156, 0.11);
+    box-shadow: 2px 5px 14px rgba(166, 161, 157, 0.15);
+    border-radius: 20px;
+}
+
+.top-card{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.top-center{
+    height: 196px;
+}
+
+.text-card{
+    width: 292px;
+    padding-left: 20px;
+}
+
+.text-card h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 112%;
+}
+
+.text-card p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+}
+
+.dop_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.weight{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+}
+
+.price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+}
+
+.button-card{
+    width: 151px;
+    height: 28px;
+    background: rgba(71, 62, 55, 0.75);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 112%;
+    letter-spacing: 0.055em;
+    color: #FFFDF5;
+    margin-left: 91px;
+    margin-right: 91px;
+    margin-bottom: 14px;
+}
+
+.section-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #3C342E;
+}
+
+.info_us h3{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 112%;
+    padding-bottom: 50px;
+    color: #FFFDF5;
+}
+
+.card-info-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.card-info{
+    width: 313px;
+}
+
+.image-info{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+
+.text-info{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFDF5;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #FFFDF5;
+}
+
+.fot-con{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.fot-nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fot-list{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+}
+
+.subsribe h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    gap: 17px;
+}
+
+.fot-soc{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.fot-soc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+    color: #A6A19D;
+}

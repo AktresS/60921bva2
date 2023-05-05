@@ -1,0 +1,253 @@
+@media (max-width: 768px) {
+    .line{
+        display: none;
+    }
+    
+    .authentication{
+        display: none;
+    }
+    
+    .nav_menu{
+        display: none;
+    }
+
+    .s_h_b{
+        display: none;
+    }
+
+    .box-search-box{
+        display: block;
+    }
+
+    .nav-button{
+        display: block;
+        background: #FFFDF5;
+    }
+
+    .main_offer{
+        background: url(../img/picture/offer_phon_tablet.jpg)  no-repeat center top / cover;
+    }
+
+    .offer{
+        padding-top: 203px;
+        padding-left: 0;
+        padding-bottom: 56px;
+        text-align: center;
+    }
+
+    .shell{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        padding-bottom: 130px;
+    }
+
+    .popularity{
+        padding-left: 0;
+    }
+
+    .section{
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .flexCard h3{
+        padding-bottom: 36px;
+    }
+
+    .card-box{
+        width: 320px;
+        height: 400px;
+    }
+
+    .section-2{
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .info_us h3{
+        padding-bottom: 36px;
+    }
+
+    .card-info-box{
+        gap: 36px;
+        padding-left: 17px;
+    }
+
+    .card-info{
+        width: 640px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 36px;
+    }
+
+    .image-info{
+        width: 85px;
+        height: 85px;
+        padding-bottom: 0;
+    }
+
+    .text-info{
+        text-align: left;
+    }
+
+    .footer{
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .fot-con{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 526px){
+    .box-search-box{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .line{
+        display: none;
+    }
+    
+    .authentication{
+        display: none;
+    }
+    
+    .nav_menu{
+        display: none;
+    }
+
+    .s_h_b{
+        display: none;
+    }
+
+    .main_offer{
+        background: url(../img/picture/offer_phon_mobile.jpg)  no-repeat center top / cover;
+    }
+
+    .offer{
+        padding-top: 124px;
+        padding-left: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .offer h1{
+        font-size: 22px;
+    }
+
+    .text_offer{
+        font-size: 14px;
+    }
+
+    .shell{
+        padding-bottom: 88px;
+    }
+
+    .popul{
+        width: 181px;
+        height: 39px;
+        font-size: 14px;
+    }
+
+    .img-popul{
+        width: 22px;
+        height: 22px;
+    }
+
+    .disc{
+        width: 181px;
+        height: 39px;
+        font-size: 14px;
+    }
+
+    .img-disc{
+        width: 22px;
+        height: 22px;
+    }
+
+    .section{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .flexCard h3{
+        padding-bottom: 18px;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 112%;
+    }
+
+    .card-box{
+        width: 290px;
+        height: 400px;
+    }
+
+    .text-card h5{
+        font-size: 14px;
+    }
+
+    .text-card p{
+        font-size: 11px;
+    }
+
+    .section-2{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .info_us h3{
+        padding-bottom: 18px;
+    }
+
+    .card-info-box{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding-left: 15px;
+    }
+
+    .card-info{
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .image-info{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+
+    .text-info{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 112%;
+        text-align: center;
+        color: #FFFDF5;
+    }
+
+    .footer{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .fot-con{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 18px;
+    }
+}
