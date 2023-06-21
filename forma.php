@@ -56,7 +56,7 @@
 
     <section class="section_form">
         <div class="container">
-            <form method="post" action="index.html" class="form">
+            <form method="post" action="index.php" class="form">
                 <h1 class="form_title">Вход на сайт</h1>
                 
                 <div class="form__group">
