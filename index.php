@@ -15,10 +15,10 @@
             <div class="row">
                 <div class="authentication">
                     <div class="enter">
-                        <a href="forma.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
+                        <a href="login.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
                     </div>  
                     <div class="registration_block">
-                        <a href="#" class="registration">Регистрация</a>
+                        <a href="register.php" class="registration">Регистрация</a>
                     </div>
                 </div>
                 

@@ -1,3 +1,7 @@
+<?php
+    session_start(["use_strict_mode" => true]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cup Coffee</title>
     <link rel="stylesheet" href="css/form_main.css">
-    <link rel="stylesheet" href="css/form_media.css">
+<!--    <link rel="stylesheet" href="css/form_media.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -56,15 +60,22 @@
 
     <section class="section_form">
         <div class="container">
-            <form method="post" action="index.php" class="form">
+            <form method="post" action="signin.php" class="form">
                 <h1 class="form_title">Вход на сайт</h1>
                 
                 <div class="form__group">
-                    <input type="text" class="form_input" placeholder="Логин">
-                    <input type="password" class="form_input" placeholder="Пароль">
+                    <input type="text" class="form_input" placeholder="Логин" name="login">
+                    <input type="password" class="form_input" placeholder="Пароль" name="password">
                 </div>
-                
-                <button class="form__button">Войти</button>
+
+                <button class="form__button" type="submit">Войти</button>
+                <p class="form_avto">У вас нет аккаунта? - <a href="register.php">зарегистрируйся</a>!</p>
+                <?php
+                if (isset($_SESSION['message'])){
+                    echo '<p class="msg">' . $_SESSION['message'] . '</p>';
+                }
+                unset($_SESSION['message']);
+                ?>
             </form>
         </div>
         
