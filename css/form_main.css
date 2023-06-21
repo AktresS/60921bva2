@@ -1,0 +1,230 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+a{
+    text-decoration: none;
+    color: #473E37;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #473E37;
+    overflow-x: hidden; /*убирает скрол внизу*/
+}
+
+.header{
+    padding-top: 24px;
+    background: #FFFDF5;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+.authentication{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.user img{
+    margin-right: 10px;
+}
+
+.box-search-box{
+    display: none;
+}
+
+.search-box{
+    height: 39.4px;
+    border-radius: 25px;
+    background: #A6A19D;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.search{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255, 253, 245, 0.48);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 39.4px;
+    width: 203px;
+}
+
+.search::placeholder{
+    color: rgba(255, 253, 245, 0.48);
+}
+
+.search-icn{
+    width: 20px;
+    height: 20px;
+    padding-right: 6px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.nav-button{
+    display: none;
+}
+
+.list{
+    width: 90px;
+}
+
+.s_h_b{
+    display: flex;
+    gap: 14px;
+}
+
+/*css для секции формы*/
+
+.section_form{
+    background: #F5F3EB;
+}
+
+.form {
+    width: 402px;
+    margin-left: 96px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.form h1{
+    padding-left: 94px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 112%;
+    letter-spacing: 0.055em;
+    color: #433B34;
+    padding-bottom: 35px;
+}
+
+.form_input{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 402px;
+    border: none;
+    border-bottom: 1px solid #473E37;
+    background-color: transparent;
+    outline: none;
+}
+
+.form__button{
+    margin-top: 35px;
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #726B64;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 112%;
+    letter-spacing: 0.055em;
+    color: #FFFDF5;
+    cursor: pointer;
+    margin-left: 127px;
+}
+
+
+/*css для footer*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #473E37;
+    color: #FFFDF5;
+}
+
+.fot-con{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    flex-wrap: wrap;
+    
+}
+
+.fot-nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fot-list{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+    color: #FFFDF5;
+}
+
+.subsribe h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    gap: 17px;
+}
+
+.fot-soc{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.fot-soc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.9%;
+    color: #FFFDF5;
+}
