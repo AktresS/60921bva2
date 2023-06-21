@@ -11,12 +11,11 @@
 </head>
 <body>
     <header class="header">
-        <!-- <div class="line"></div>    -->
         <div class="container">
             <div class="row">
                 <div class="authentication">
                     <div class="enter">
-                        <a href="#" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
+                        <a href="forma.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
                     </div>  
                     <div class="registration_block">
                         <a href="#" class="registration">Регистрация</a>
