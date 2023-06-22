@@ -1,3 +1,10 @@
+<?php
+    session_start(["use_strict_mode" => true]);
+    if ($_SESSION['username']){
+        header('Location: /');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +20,26 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="authentication">
-                    <div class="enter">
-                        <a href="login.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
-                    </div>  
-                    <div class="registration_block">
-                        <a href="register.php" class="registration">Регистрация</a>
-                    </div>
-                </div>
+                <?php
+                    if (isset($username)){
+                        echo ($_SESSION['username']).'  ';
+                        echo ("<a href='signin.php?logout=1'>Выйти</a>");
+                    }
+                    else{
+                        echo ('
+                            <div class="authentication">
+                                <div class="enter">
+                                    <a href="login.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
+                                </div>
+                                <div class="registration_block">
+                                    <a href="register.php" class="registration">Регистрация</a>
+                                </div>
+                            </div>
+                        ');
+                    }
+                ?>
+
+
                 
                 <div class="menu">
                     <a href="#!" class="logo"><img src="img/icons/logo.svg" alt=""></a>

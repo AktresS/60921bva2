@@ -1,5 +1,8 @@
 <?php
     session_start(["use_strict_mode" => true]);
+    if ($_SESSION['username']){
+        header('Location: login.php');
+    }
 ?>
 
 <!DOCTYPE html>
