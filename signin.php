@@ -10,23 +10,22 @@
             if ($row = $result->fetch())
             {
                 if (md5($_POST["password"]) == $row['password']){
-                    $_SESSION['username'] = $_POST['login'];
-                    $_SESSION['user_id'] = $row['id'];
+                    $_SESSION['email'] = $_POST['login'];
                     $_SESSION['message'] = 'Вы успешно вошли в сиситему';
-                    header("Location: index.php");
-                    die();
+                    header("Location: login.php");
+
                 }
                 else {
                     $_SESSION['message'] = 'Вы ввели неправильный пароль!';
-                    header("Location: index.php?page=login");
-                    die();
+                    header("Location: login.php");
+
                 }
 
             }
             else {
                 $_SESSION['message'] = 'Вы ввели неправильный логин!';
-                header("Location: index.php?page=login");
-                die();
+                header("Location: login.php");
+
             }
 
         }

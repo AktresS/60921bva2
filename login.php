@@ -1,8 +1,8 @@
 <?php
     session_start(["use_strict_mode" => true]);
-    if ($_SESSION['username']){
-        header('Location: login.php');
-    }
+//    if (!isset($email)){
+//        header('Location: login.php');
+//    }
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +16,14 @@
 <!--    <link rel="stylesheet" href="css/form_media.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+<?php
+
+if (isset($_SESSION['email'])) {
+    header("Location: index.php");
+    die();
+}
+?>
 
 <body>
     <header class="header">
