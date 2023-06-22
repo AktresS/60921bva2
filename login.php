@@ -1,8 +1,6 @@
 <?php
     session_start(["use_strict_mode" => true]);
-//    if (!isset($email)){
-//        header('Location: login.php');
-//    }
+
 ?>
 
 <!DOCTYPE html>
