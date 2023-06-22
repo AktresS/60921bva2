@@ -1,6 +1,5 @@
 <?php
     session_start(["use_strict_mode" => true]);
-
 ?>
 
 

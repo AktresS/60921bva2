@@ -1,6 +1,17 @@
 <?php
     session_start(["use_strict_mode" => true]);
 
+    if (isset($_SESSION['email'])) {
+        $text = $_SESSION['email'];
+        $regi = 'Выход';
+        $link2 = 'profile.php?logout=1';
+    } else {
+        $link = 'login.php';
+        $text = 'Вход';
+        $regi = 'Регистрация';
+        $link2 = 'register.php';
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -20,15 +31,24 @@
             <div class="row">
                 <div class="authentication">
                     <div class="enter">
-                        <a href="login.php" class="user"><img src="img/icons/user.svg" alt="">Вход</a>
+                        <a href="<?php echo($link); ?>" class="user"><img src="img/icons/user.svg" alt="">
+                            <?php
+                                echo '<p class="user">' . $text . '</p>';
+                            ?>
+                        </a>
                     </div>
                     <div class="registration_block">
-                        <a href="register.php" class="registration">Регистрация</a>
+                        <a href="<?php echo($link2) ?>" class="registration">
+                            <?php
+                                echo ($regi);
+                            ?>
+                        </a>
                     </div>
+
                 </div>
-                
+
                 <div class="menu">
-                    <a href="#!" class="logo"><img src="img/icons/logo.svg" alt=""></a>
+                    <a href="index.php" class="logo"><img src="img/icons/logo.svg" alt=""></a>
                     <div class="box-search-box">
                         <div class="search-box">
                             <a href="#!" class="search-icn"><img src="img/icons/grey-search.svg" alt=""></a>
@@ -54,6 +74,7 @@
                         <a href="" class="but"><img src="img/icons/basket.svg" alt=""></a>
                     </div>
                 </div>
+
             </div>
         </div>
         
